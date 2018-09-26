@@ -1,0 +1,79 @@
+/* pages/components/dishes/dishes.wxss */
+.page-body{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.page-aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 20%;
+    height: 400rpx;
+    border: 1rpx solid #ccc;
+    background-color:#F4F4F4;
+}
+.page-aside .text-nav{
+    border-top: 1rpx solid #ccc;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    font-size: 0.8rem;
+}
+.page-aside .text-nav:nth-child(1){
+    border-top: none;
+}
+.page-aside .text-nav.selected{
+    background-color: #fff;
+    margin-right: -1px;
+}
+.page-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 75%;
+}
+.listItem{
+    display: flex;
+    height: 100rpx;
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 10rpx 20rpx;
+    align-items: center;
+}
+.listItem .flex-item{
+    display: inline-block;
+    width: 70%;
+}
+.listItem .flex-item .price{
+    display: block;
+    color: orange;
+}
+.cart{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom :0;
+    padding: 1rem;
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

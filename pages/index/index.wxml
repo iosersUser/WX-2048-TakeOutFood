@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='page-body'>
+        <view class='page-section'>
+            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <view class="swiper-item">
+                    <image src="{{item}}" class="slide-image"/>
+                    </view>
+                </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class='page-section nav-block'>
+            <block  wx:for='{{navItems}}'>
+            <view class='page-operator {{item.isSplot ? "exp" : "" }}'>
+                <navigator url='../components/{{item.url}}/{{item.url}}'>{{item.name}}</navigator>
+            </view>
+            </block>
+        </view>
+    </view>
+</view>

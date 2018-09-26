@@ -1,0 +1,36 @@
+/**index.wxss**/
+.swiper-item{
+    height: 150rpx;
+}
+.swiper-item image,.page-operator{
+    width: 100%;
+}
+.nav-block{
+    width: 100%;
+    height: 300rpx;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.nav-block .page-operator{
+    display: flex;
+    width: 30%;
+    height: 50%;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+}
+.nav-block .page-operator.exp{
+    border-left: none;
+    border-right:none;
+}
+
+
+
+
+
+
+
+
+
+

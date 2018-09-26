@@ -1,0 +1,22 @@
+<!--pages/games/games.wxml-->
+<view class='gameContainer'>
+    <view class='container-top'>
+        <view class='gameName'>2048</view>
+        <view class='score'>
+            <view class='scoreDetail'>得分</view>
+            <view class='scoreNum'>{{scoreNum}}</view>
+        </view>
+        <view class='score'>
+            <view class='scoreDetail'>历史最高</view>
+            <view class='scoreNum'>{{scoreTopNum}}</view>
+        </view>
+    </view>
+    <view class='container-section'  bindtouchstart="tapStart" bindtouchmove="tapMove" bindtouchend="tapEnd">
+        <view class='rows' wx:for="{{square}}" wx:for-item='row'>
+            <view class = 'cols cols_{{item}}' wx:for='{{row}}' >{{item}}</view>
+        </view>
+    </view>
+    <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChange" bindcancel="modalCancle">
+        <view> 游戏结束，重新开始吗？ </view>
+    </modal>
+</view>

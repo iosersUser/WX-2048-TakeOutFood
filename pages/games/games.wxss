@@ -1,0 +1,127 @@
+/* pages/games/games.wxss */
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.container-top{
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-top>view{
+    width: 200rpx;
+    height: 150rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+}
+.container-top .gameName{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00BFFF;
+}
+.container-top .score{
+    font-size: 0.8rem;
+    background-color: #EEE4DA ;
+    display: flex;
+    flex-direction: column;
+}
+.container-section{
+    width: 650rpx;
+    height: 650rpx;
+    border: 1px solid #ccc;
+    background-color: #B8AF9E;
+    border-radius: 10rpx;
+    margin: 40rpx auto;
+     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+.container-section .rows{
+     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+.container-section .cols{
+    width: 145rpx;
+    height: 145rpx;
+    background-color: #CCC0b2;
+    margin: 6rpx;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+    font-size: 1.5rem;
+    color: #7c736a;
+}
+.container-section .cols_0{
+    color: #ccc0b2;
+    background-color: #ccc0b2;
+
+}
+
+.container-section .cols_2
+{
+    color: #7c736a;
+    background: #eee4da;
+}
+.container-section .cols_4
+{
+    color: #7c736a;
+    background: #ece0c8;
+}
+.container-section .cols_8
+{
+    color: #fff7eb;
+    background: #f2b179;
+}
+.container-section .cols_16
+{
+    color:#fff7eb;
+    background:#f59563;
+}
+.container-section .cols_32
+{
+    color:#fff7eb;
+    background:#f57c5f;
+}
+.container-section .cols_64
+{
+    color:#fff7eb;
+    background:#f65d3b;
+}
+.container-section .cols_128
+{
+    color:#fff7eb;
+    background:#edce71;
+}
+.container-section .cols_256
+{
+    color:#fff7eb;
+    background:#edcc61;
+}
+.container-section .cols_512
+{
+    color:#fff7eb;
+    background:#ecc850;
+}
+.container-section .cols_1024
+{
+    color:#fff7eb;
+    background:#edc53f;
+}
+.container-section .cols_2048
+{
+    color:#fff7eb;
+    background:#eec22e;
+}
+.bc{
+	display: flex;
+}

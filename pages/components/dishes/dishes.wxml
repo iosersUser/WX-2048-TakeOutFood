@@ -1,0 +1,44 @@
+<!--pages/components/dishes/dishes.wxml-->
+<view class='page-body'>
+    <view class='page-aside'>
+        <block  wx:for='{{navItems}}'>
+        <text class='text-nav {{currentItem == item.index ? "selected" : ""}}'  data-id='{{item.id}}'
+         data-index='{{item.index}}' bindtap='showMenu'>{{item.name}}</text>
+         </block>
+    </view>
+    <view class='page-content'>
+        <block  wx:for='{{dishesList[currentItem]}}'>
+            <view data-id='{{item.id}}' class='listItem' catchtap='selectItem'>
+                <view class='flex-item'>
+                    <text class='title'>{{item.name}}</text>
+                    <text class='price'>￥{{item.price}}</text>
+                </view>
+                <view class='add-btn'>
+                    <icon type='{{item.status ? "success": "circle" }}' size='30' color='orange'></icon>
+                </view>
+            </view>
+        </block>
+    </view>
+    
+</view>
+<!-- cart -->
+    <view class="cart">
+        <text class="total">购物车：{{cartTotal}}</text>
+    </view>
+    <loading hidden="{{hidden}}">玩命加载中…</loading>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
